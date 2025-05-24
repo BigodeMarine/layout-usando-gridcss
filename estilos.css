@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #0a0a23;
+    --accent-color: #ff3366;
+    --bg-color: #f7f8fa;
+    --text-color: #333;
+    --max-width: 1200px;
+    --gap: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.container {
+    .container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 2rem 5vw;
+    }
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-list a:hover {
+    color: var(--accent-color);
+}
+
+.banner {
+    background: url('https://picsum.photos/1600/600') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 15vh 2rem;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+section {
+    margin: 4rem 0;
+}
+
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--gap);
+}
+
+.servico {
+    background: white;
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+blockquote {
+    background: white;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--accent-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .container {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+
+@media (min-width: 1600px) {
+    :root {
+        --mx-width: 1400px;
+    }
+}
