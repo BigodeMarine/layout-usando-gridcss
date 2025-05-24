@@ -1,2 +1,2 @@
-Layout usando Grid css e media query  
+Layout usando Grid css e media queries  
 Para melhor visualização em diferentes dispositivos
