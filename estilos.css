@@ -22,11 +22,10 @@ body {
 }
 
 .container {
-    .container {
-        max-width: var(--max-width);
-        margin: 0 auto;
-        padding: 2rem 5vw;
-    }
+
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 5vw;
 }
 
 header {
@@ -152,6 +151,6 @@ footer {
 
 @media (min-width: 1600px) {
     :root {
-        --mx-width: 1400px;
+        --max-width: 1400px;
     }
 }
