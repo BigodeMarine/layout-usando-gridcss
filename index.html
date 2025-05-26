@@ -11,48 +11,46 @@
 
 <body>
     <header>
-        <div class="header-container">
+        <nav class="nav">
             <h1>Creative Design</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#home">Início</a></li>
+                <li class="nav__item"><a class="nav__link" href="#sobre">Sobre</a></li>
+                <li class="nav__item"><a class="nav__link" href="#servicos">Serviços</a></li>
+                <li class="nav__item"><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="home" class="banner">
+    <section class="banner">
         <h2>Transformamos ideias em experiências visuais inesquecíveis</h2>
     </section>
 
-    <section id="sobre" class="container">
+    <section class="servicos">
         <h2>Sobre Nós</h2>
         <p>Somos uma agência apaixonada por design, inovação e critatividade. Nosso objetivo é impulsionar marcar com
             soluções visuais impactantes.</p>
     </section>
 
-    <section id="servicos" class="container">
+    <section class="servicos">
         <h2>Serviços</h2>
-        <div class="grid-servicos">
-            <div class="servico">Design Gráfico</div>
-            <div class="servico">Desenvolvimento Web</div>
-            <div class="servico">Branding</div>
-            <div class="servico">Identidade Visual</div>
-            <div class="servico">UX/UI Design</div>
+        <div class="grid__list">
+            <div class="grid__item">Design Gráfico</div>
+            <div class="grid__item">Desenvolvimento Web</div>
+            <div class="grid__item">Branding</div>
+            <div class="grid__item">Identidade Visual</div>
+            <div class="grid__item">UX/UI Design</div>
         </div>
     </section>
 
-    <section id="depoimentos" class="container">
+    <section class="servicos">
         <h2>Depoimentos</h2>
         <blockquote>“A Agência Criativa deu vida à nossa marca de forma surpreendente!” — Tarma</blockquote>
         <blockquote>“Profissionalismo e criatividade em cada detalhe.” — Fio</blockquote>
     </section>
 
-    <section id="contato" class="container">
+    <section class="servicos">
         <h2>Contato</h2>
         <p><strong>Endereço:</strong> Rua Imaginária, 42 - Criativolândia</p>
         <p><strong>Telefone:</strong> 4002-8922</p>
@@ -67,7 +65,7 @@
 
             <label for="mensagem">Mensagem:</label>
             <textarea name="mensagem" id="mensagem" required></textarea>
-            
+
             <button type="submit">Enviar</button>
         </form>
     </section>
