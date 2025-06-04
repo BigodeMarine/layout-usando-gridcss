@@ -1,0 +1,30 @@
+@use 'variaveis';
+@use 'mixins';
+// Estrutura geral da página 
+header {
+  background-color: variaveis.$primary-color;
+  color: variaveis.$white;
+}
+
+.servicos {
+  @include mixins.container;
+
+  @include mixins.respond-to(large) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+.banner {
+  background: url('https://picsum.photos/1600/600') center/cover no-repeat;
+  color: variaveis.$white;
+  text-align: center;
+  padding: 15vh 2rem;
+}
+
+footer {
+  background-color: variaveis.$primary-color;
+  color: variaveis.$white;
+  text-align: center;
+  padding: 2rem;
+}

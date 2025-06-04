@@ -1,0 +1,88 @@
+@use 'variaveis';
+@use 'mixins';
+
+// Links, formulário e botões
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+
+    @include mixins.respond-to(mobile) {
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__link {
+    color: variaveis.$white;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      color: variaveis.$accent-color;
+    }
+  }
+
+  @include mixins.respond-to(mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.grid {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: variaveis.$gap;
+  }
+
+  &__item {
+    background: variaveis.$white;
+    padding: 1.5rem;
+    border-left: 4px solid variaveis.$accent-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+}
+
+blockquote {
+  background: variaveis.$white;
+  padding: 1rem;
+  border-left: 4px solid variaveis.$primary-color;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background: variaveis.$primary-color;
+  color: variaveis.$white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background: variaveis.$accent-color;
+  }
+}

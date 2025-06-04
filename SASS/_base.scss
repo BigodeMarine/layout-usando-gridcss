@@ -1,0 +1,25 @@
+@use 'variaveis';
+
+// Reset padrão
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Estilo base e a tipografia
+body {
+  font-family: variaveis.$fonte-principal;
+  background-color: variaveis.$bg-color;
+  color: variaveis.$text-color;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: 4rem 0;
+}

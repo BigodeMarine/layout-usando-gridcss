@@ -1,0 +1,18 @@
+@use 'variaveis';
+
+// Mixin para container responsivo
+@mixin container($padding-x: 5vw) {
+  max-width: variaveis.$max-width;
+  margin: 0 auto;
+  padding: 2rem $padding-x;
+}
+
+// Mixin para media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: variaveis.$breakpoint-mobile) { @content; }
+  }
+  @else if $breakpoint == large {
+    @media (min-width: variaveis.$breakpoint-large) { @content; }
+  }
+}
